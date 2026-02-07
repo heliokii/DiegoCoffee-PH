@@ -37,11 +37,12 @@ export default function AsideMenuLayer({ menu, className = '', ...props }: Props
         <div
           className={`flex flex-row h-14 items-center justify-between ${asideBrandStyle}`}
         >
-          <div className="text-center flex-1 lg:text-left lg:pl-6 xl:text-center xl:pl-0">
-              
-                  <b className="font-black">Diego Coffee & Cocktail Studio</b>
-                
-            
+          <div className="text-center flex-1 lg:text-left lg:pl-6 xl:text-center xl:pl-0 flex items-center justify-center">
+            <img
+              src="/logo.png"
+              alt="Diego by atelorie"
+              className="h-10 w-auto object-contain max-w-[180px]"
+            />
           </div>
           <button
             className="hidden lg:inline-block xl:hidden p-3"

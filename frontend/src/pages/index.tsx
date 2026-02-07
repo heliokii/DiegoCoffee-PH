@@ -56,20 +56,19 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-diego-navy/95 backdrop-blur-md py-4 shadow-2xl' : 'bg-transparent py-8'}`}
     >
       <div className='container mx-auto px-6 flex justify-between items-center'>
-        <Link href='#home' className='flex items-center space-x-2 group'>
-          <div className='bg-diego-accent p-2 rounded-xl group-hover:rotate-12 transition-transform'>
-            <BaseIcon path={mdiCreation} size={24} color='white' />
-          </div>
-          <span className='text-3xl font-heading text-white group-hover:text-diego-accent transition-colors'>
-            Diego
-          </span>
+        <Link href='#home' className='flex items-center group'>
+          <img
+            src='/logo.png'
+            alt='Diego by atelorie'
+            className='h-12 md:h-14 w-auto object-contain hover:opacity-90 transition-opacity'
+          />
         </Link>
         <div className='hidden md:flex items-center space-x-10'>
           {['Home', 'About', 'Menu', 'Locations', 'Contact'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className='text-white font-black uppercase tracking-[0.2em] text-xs hover:text-diego-accent transition-colors'
+              className='text-white font-display font-normal uppercase tracking-[0.2em] text-xs hover:text-diego-accent transition-colors'
             >
               {item}
             </a>
@@ -85,7 +84,7 @@ const Navbar = () => {
         </div>
         <a
           href='#contact'
-          className='bg-diego-accent hover:bg-yellow-500 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] shadow-xl transform hover:scale-105 transition-all'
+          className='bg-diego-accent hover:bg-yellow-500 text-white px-6 py-2 rounded-full font-display uppercase tracking-widest text-[10px] shadow-xl transform hover:scale-105 transition-all'
         >
           Book Event
         </a>
@@ -114,10 +113,10 @@ const DiegoHero = () => (
       <h1 className='text-7xl md:text-[12rem] font-heading text-diego-accent mb-4 drop-shadow-2xl hover:rotate-2 transition-transform cursor-default select-none'>
         Diego
       </h1>
-      <p className='text-2xl md:text-5xl font-light mb-12 italic tracking-[0.2em] uppercase opacity-90'>
+      <p className='text-2xl md:text-5xl font-comic font-normal mb-12 italic tracking-[0.2em] uppercase opacity-90'>
         Coffee • Cocktails • Chaos 💙
       </p>
-      <h2 className='text-4xl md:text-6xl font-bold mb-16 max-w-4xl mx-auto leading-[1.1] tracking-tight'>
+      <h2 className='text-4xl md:text-6xl font-display font-normal mb-16 max-w-4xl mx-auto leading-[1.1] tracking-tight'>
         A little playground in Lucena. <br className='hidden md:block' />
         <span className='text-diego-accent bg-white/5 px-4 rounded-3xl backdrop-blur-sm'>
           Beautifully unhinged.
@@ -126,7 +125,7 @@ const DiegoHero = () => (
       <div className='flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8'>
         <a
           href='#menu'
-          className='group bg-diego-accent hover:bg-yellow-500 text-white px-12 py-5 rounded-full text-2xl font-black transition-all transform hover:scale-110 shadow-[0_20px_50px_rgba(250,204,21,0.4)] flex items-center space-x-4'
+          className='group bg-diego-accent hover:bg-yellow-500 text-white px-12 py-5 rounded-full text-2xl font-display transition-all transform hover:scale-110 shadow-[0_20px_50px_rgba(250,204,21,0.4)] flex items-center space-x-4'
         >
           <span>Drink the feelings</span>
           <BaseIcon
@@ -137,13 +136,13 @@ const DiegoHero = () => (
         </a>
         <a
           href='#contact'
-          className='border-4 border-white hover:bg-white hover:text-diego-navy text-white px-12 py-5 rounded-full text-2xl font-black transition-all transform hover:scale-105 uppercase tracking-widest'
+          className='border-4 border-white hover:bg-white hover:text-diego-navy text-white px-12 py-5 rounded-full text-2xl font-display transition-all transform hover:scale-105 uppercase tracking-widest'
         >
           Play with Diego
         </a>
       </div>
       <div className='mt-20'>
-        <p className='text-white/40 font-black text-sm uppercase tracking-[0.5em] animate-bounce'>
+        <p className='text-white/40 font-display text-sm uppercase tracking-[0.5em] animate-bounce'>
           This is your sign
         </p>
       </div>
@@ -160,7 +159,7 @@ const BrandStory = () => (
     <div className='container mx-auto px-6'>
       <div className='flex flex-col lg:flex-row items-center gap-20'>
         <div className='lg:w-1/2 mb-12 lg:mb-0'>
-          <div className='inline-block px-6 py-2 bg-diego-navy text-white text-sm font-black rounded-full mb-10 uppercase tracking-[0.3em]'>
+          <div className='inline-block px-6 py-2 bg-diego-navy text-white text-sm font-display rounded-full mb-10 uppercase tracking-[0.3em]'>
             The Brand Story
           </div>
           <h2 className='text-6xl md:text-9xl font-heading text-diego-accent mb-10 -ml-2 leading-none'>
@@ -176,7 +175,7 @@ const BrandStory = () => (
           </p>
           <div className='relative mb-12'>
             <div className='absolute -left-10 top-0 bottom-0 w-2 bg-diego-accent rounded-full'></div>
-            <p className='text-2xl leading-relaxed italic text-diego-navy/70 pl-6'>
+            <p className='text-2xl font-sans leading-relaxed italic text-diego-navy/70 pl-6'>
               &quot;Making specialty coffee and cocktails accessible, fun, and
               beautifully chaotic for everyone.&quot;
             </p>
@@ -278,7 +277,7 @@ const MenuPreview = () => {
         <h2 className='text-7xl md:text-9xl font-heading text-diego-accent mb-6'>
           Playground Menu
         </h2>
-        <p className='mb-20 text-2xl font-black tracking-[0.3em] text-diego-navy uppercase opacity-60 italic'>
+        <p className='mb-20 text-2xl font-display tracking-[0.3em] text-diego-navy uppercase opacity-60 italic'>
           Experiment with flavors
         </p>
 
@@ -762,7 +761,7 @@ const Locations = ({ locations }: { locations: any[] }) => {
         <h2 className='text-7xl md:text-[10rem] font-heading text-diego-accent mb-12 leading-none'>
           Find the Chaos
         </h2>
-        <p className='mb-24 text-2xl font-black tracking-[0.5em] text-diego-navy uppercase opacity-30 italic'>
+        <p className='mb-24 text-2xl font-display tracking-[0.5em] text-diego-navy uppercase opacity-30 italic'>
           Locate the Playground
         </p>
 
@@ -876,10 +875,12 @@ export default function DiegoApp() {
         <div className='container mx-auto px-6 relative z-10'>
           <div className='grid grid-cols-1 lg:grid-cols-4 gap-20 mb-20'>
             <div className='lg:col-span-2'>
-              <h3 className='text-7xl font-heading text-diego-accent mb-8 leading-none'>
-                Diego
-              </h3>
-              <p className='text-2xl opacity-60 italic mb-12 max-w-md font-light leading-relaxed'>
+              <img
+                src='/logo.png'
+                alt='Diego by atelorie'
+                className='h-20 w-auto object-contain mb-8'
+              />
+              <p className='text-2xl font-sans opacity-60 italic mb-12 max-w-md font-light leading-relaxed'>
                 Your little playground in Lucena and beyond. Drink the feelings,
                 embrace the chaos, and play with Diego.
               </p>
@@ -901,10 +902,10 @@ export default function DiegoApp() {
             </div>
             <div className='grid grid-cols-2 gap-12 lg:col-span-2'>
               <div>
-                <h4 className='font-black uppercase tracking-[0.4em] text-xs mb-10 text-white/30'>
+                <h4 className='font-display uppercase tracking-[0.4em] text-xs mb-10 text-white/30'>
                   Navigation
                 </h4>
-                <ul className='space-y-6 text-xl font-bold'>
+                <ul className='space-y-6 text-xl font-sans font-bold'>
                   <li>
                     <a
                       href='#home'
@@ -940,10 +941,10 @@ export default function DiegoApp() {
                 </ul>
               </div>
               <div>
-                <h4 className='font-black uppercase tracking-[0.4em] text-xs mb-10 text-white/30'>
+                <h4 className='font-display uppercase tracking-[0.4em] text-xs mb-10 text-white/30'>
                   Admin & Legal
                 </h4>
-                <ul className='space-y-6 text-xl font-bold mb-12'>
+                <ul className='space-y-6 text-xl font-sans font-bold mb-12'>
                   <li>
                     <Link
                       href='/privacy-policy'

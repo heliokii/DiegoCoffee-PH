@@ -12,12 +12,10 @@
 @import "_theme.css";
 @import '_rich-text.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
-
 body {
-    @apply font-sans text-primaryText !important;
-  }
+  @apply font-sans text-primaryText !important;
+  font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif !important;
+}
 .MuiList-root,
 .MuiListItemIcon-root {
   @apply text-midnightBlueTheme-buttonColor  bg-gray-600  !important;
@@ -34,16 +32,14 @@ body {
 .MuiDataGrid-cell:focus{
   @apply outline-midnightBlueTheme-buttonColor !important;
 }
- 
+
 .introjs-tooltip {
   @apply min-w-[400px] max-w-[480px] p-2 !important;
 }
 
 .introjs-tooltipReferenceLayer * {
   @apply font-sans text-base text-gray-900;
-
-  font-family: 'Ubuntu', sans-serif !important; 
-
+  font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif !important;
 }
 
 .good-img {

@@ -115,9 +115,11 @@ module.exports = {
         coolGray: '#9CA3AF',
       },
       fontFamily: {
-        sans: ['Ubuntu', 'sans-serif'],
-        cursive: ['Pacifico', 'cursive'],
-        heading: ['Pacifico', 'cursive'],
+        sans: ['Montserrat', 'Open Sans', 'Roboto', 'sans-serif'],
+        heading: ['Bebas Neue', 'sans-serif'],
+        display: ['Anton', 'sans-serif'],
+        comic: ['Bangers', 'cursive'],
+        bold: ['Montserrat', 'Roboto', 'sans-serif'],
       },
       borderRadius: {
         '3xl': '2rem',
