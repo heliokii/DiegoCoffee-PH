@@ -40,7 +40,7 @@ Diego Coffee & Cocktail Studio - template backend,
 
 #### Api Documentation (Swagger)
 
-http://localhost:8080/api-docs (local host)
+http://localhost:8080/api-docs (local-host)
 
 http://host_name/api-docs
 
